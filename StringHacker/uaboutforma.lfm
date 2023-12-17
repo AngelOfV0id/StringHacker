@@ -1,0 +1,39 @@
+object AboutForma: TAboutForma
+  Left = 685
+  Height = 160
+  Top = 280
+  Width = 360
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsToolWindow
+  Caption = 'About...'
+  ClientHeight = 160
+  ClientWidth = 360
+  Color = clBtnFace
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object InfoMemo: TMemo
+    Left = 0
+    Height = 160
+    Top = 0
+    Width = 360
+    Color = clBtnFace
+    Lines.Strings = (
+      'String Hacker $VERSION ($BUILD_TIME)'
+      'by AngelOfV0id (ex. NobootRecord), 2022-2023'
+      ''
+      'This is free software released in public domain; see UNLICENSE.txt for further details.'
+      ''
+      'https://github.com/AngelOfV0id/StringHacker'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+end
